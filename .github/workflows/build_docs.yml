@@ -41,7 +41,7 @@ jobs:
       - name: install Gem
         run: gem install asciidoctor
       - name: create file
-        run: asciidoctor -o $GITHUB_WORKSPACE/src/modelldokumentation.html README.adoc
+        run: asciidoctor -o ./src/modelldokumentation.html README.adoc
   
 
       #- name: Generate HTML
