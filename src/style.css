@@ -1,3 +1,177 @@
+@import "https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700";
+@import "https://cdn.jsdelivr.net/gh/asciidoctor/asciidoctor@2.0/data/stylesheets/asciidoctor-default.css";
+
+@font-face {
+	font-family: 'trade gothic';
+	src: url(../fonts/tradegothic-normal.ttf);
+}
+
+body {
+	font-family: 'trade gothic', sans-serif;
+	line-height: 1.5;
+	padding: 0;
+	margin: 0;
+}
+
+header {
+	height: 128px;
+}
+
+summary.title {
+	font-size: 15pt;
+	font-weight: bold;
+}
+
+ul.sectlevel2, ul.sectlevel3, ul.sectlevel1 {
+	margin-left: 0px; 
+	list-style: none;
+	padding-left: 0px !important;
+}
+
+ul.sectlevel0 > li > a {
+	visibility: hidden;
+	height: 0px;
+}
+
+li a {
+	font-family: 'trade gothic', sans-serif;
+	font-size: 12pt;
+	color: black;
+	cursor: pointer;
+	margin: 0px;
+	text-indent: initial !important;
+}
+
+li a:hover {
+	background-color: #D9D9D9;
+	display: flex;
+	flex-grow: 100;
+	color: #000000;
+	margin-top: 2px;
+}
+
+/*#toc li ul.sectlevel1 li, ul.sectlevel2 li, ul.sectlevel3 li {
+	border-bottom: 1px solid #bdbdbd;
+	border-collapse: collapse;
+}*/
+
+h1 a.link {
+	font-family: 'trade gothic', sans-serif;
+	font-weight: bold;
+	font-size: 36pt;
+	line-height: 41pt;
+	color: #000000 !important;
+}
+
+a {
+	font-family: 'trade gothic', sans-serif;
+	font-size: 12pt;
+	color: #666666;
+}
+
+.subtitle {
+	font-family: 'trade gothic', sans-serif;
+	font-weight: bold;
+	font-size: 24pt;
+	line-height: 20pt;
+	color: #000000;
+}
+
+img[alt="logo kt sz rgb"] {
+	position: relative; 
+	left: calc(100% - 200px);
+}
+
+h2, h2 a.link {
+	font-family: 'trade gothic', sans-serif;
+	font-weight: bold;
+	color: #000000;
+	font-size: 24pt;
+}
+
+h3, h3 a.link {
+	font-family: 'trade gothic', sans-serif;
+	font-weight: bold;
+	color: #000000;
+	font-size: 18pt;
+}
+
+h4, h4 a.link{
+	font-family: 'trade gothic', sans-serif;
+	font-weight: bold;
+	color: #000000;
+	font-size: 15pt;
+}
+
+h1 a.link:hover, h2 a.link:hover, h3 a.link:hover, h4 a.link:hover {
+	color: #555555;
+}
+
+#toc {
+	background-color: #d9d9d9;
+}
+
+#toctitle {
+	font-family: 'trade gothic', sans-serif;
+	font-weight: bold;
+	color: #000000;
+	font-size: 24pt;
+	line-height: 14pt;
+}
+
+#subtitle-header {
+	font-size: x-large;
+	padding: .6em;
+	margin: 0;	
+}	
+
+#content {
+	background-color: white;
+	grid-area: content;
+	max-width: 1000px;
+	padding: 1em;
+	margin: auto;
+}
+
+#content img {
+	max-width: 100%;
+}
+
+pre {
+	background-color: #f7f7f8;
+	padding: 1em;
+	word-wrap: break-word;
+	white-space: pre-wrap;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+td, th {
+	border: 1px solid gray;
+	padding: .4em;
+}
+
+th {
+	background-color: #f9f9f9;
+	text-align: left;
+}
+
+.paragraph.img-logo {
+	width: 100%;
+	position: static;
+	left: -40px;
+	border-bottom: 1px solid #dedede;
+}
+
+.sidebarblock li a:hover {
+	font-family: 'trade gothic', sans-serif;
+	font-size: 12pt;
+	color: #666666;
+	background-color: #00FF00;
+	height: 0px !important;	
+}
 
 #iframe-input {
 	width: 100%;

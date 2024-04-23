@@ -21,7 +21,7 @@ ifndef::env-github[:toc: left]
 :sectlinks:
 :sectanchors:
 :includedir: docs
-:stylesheet: themes/stylesheet.css
+:stylesheet: ../themes/stylesheet.css
 :doctype: book
 :!chapter-signifier:
 
