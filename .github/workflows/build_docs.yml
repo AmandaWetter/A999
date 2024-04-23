@@ -55,7 +55,7 @@ jobs:
       #    asciidoctor_params: --attribute=nofooter
       - name: Move HTML to Repository
         run: |
-          mv $GITHUB_WORKSPACE/src/modelldokumentation.html $GITHUB_WORKSPACE/generated/modelldokumentation.html
+          mv $GITHUB_WORKSPACE/src/modelldokumentation.html $GITHUB_WORKSPACE/src/modelldokumentation.html
       
       - name: Commit HTML
         run: |
