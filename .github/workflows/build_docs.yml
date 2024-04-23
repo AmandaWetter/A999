@@ -40,3 +40,26 @@ jobs:
           cache-version: 0 # Increment this number if you need to re-download cached gems
       - name: install Gem
         run: gem install asciidoctor
+      - name: create file
+        run: asciidoctor -o $GITHUB_WORKSPACE/src/modelldokumentation.html README.adoc
+  
+
+      #- name: Generate HTML
+      #  run: |
+      #    asciidoctor -o $GITHUB_WORKSPACE/output.html README.adoc 
+      # Runs a single command using the runners shell
+      #- name: asciidoctor-ghpages
+      #  uses: manoelcampos/asciidoctor-ghpages-action@v2
+      #  with:
+      #    pdf_build: true
+      #    asciidoctor_params: --attribute=nofooter
+      - name: Move HTML to Repository
+        run: |
+          mv $GITHUB_WORKSPACE/src/modelldokumentation.html $GITHUB_WORKSPACE/generated/modelldokumentation.html
+      
+      - name: Commit HTML
+        run: |
+          git config --global user.email "actions@github.com"
+          git config --global user.name "GitHub Action"
+          git add generated/output.html
+          git diff-index --quiet HEAD || git commit -m "Generate HTML from AsciiDoc" && git push
