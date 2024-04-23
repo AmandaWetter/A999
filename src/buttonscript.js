@@ -5,10 +5,10 @@ function clickedButton(){
 	iframeinput.setAttribute("id", "iframe-input");
 	
 	if(event.target.value === "startseite"){
-		iframeinput.setAttribute("src", "./modelldokumentation.html");
+		iframeinput.setAttribute("src", "./src/modelldokumentation.html");
 		changeButtonInput("modelldok");
 	} else {
-		iframeinput.setAttribute("src", "./entrypage.html");
+		iframeinput.setAttribute("src", "./src/entrypage.html");
 		changeButtonInput("Startseite");
 	}
 	windowInput.appendChild(iframeinput);	
