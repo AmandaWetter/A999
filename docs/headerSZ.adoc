@@ -1,8 +1,0 @@
-[grid=none, frame=none, width="100%"]
-|=======
-|Umweltdepartement | .5+<.>m|image:{includedir}/img/logo_kt_sz.JPG[]
-| [#amt-title]*Amt für Geoinformation* | Bahnhofstrasse 16 
-| | Postfach 1213
-| | 6431 Schwyz 
-| | Telefon 041 819 25 41
-|=======

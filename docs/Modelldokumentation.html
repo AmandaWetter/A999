@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Asciidoctor 2.0.22">
+<title>&lt;Titel der Modelldokumentation&gt;</title>
+<style>
+@import "https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700";
+@import "https://cdn.jsdelivr.net/gh/asciidoctor/asciidoctor@2.0/data/stylesheets/asciidoctor-default.css";
+
+@font-face {
+	font-family: 'trade gothic';
+	src: url(../fonts/tradegothic-normal.ttf);
+}
+
+body {
+	font-family: 'trade gothic', sans-serif;
+	line-height: 1.5;
+	padding: 0;
+	margin: 0;
+}
+
+header {
+	height: 128px;
+}
+
+summary.title {
+	font-size: 15pt;
+	font-weight: bold;
+}
+
+ul.sectlevel2, ul.sectlevel3, ul.sectlevel1 {
+	margin-left: 0px; 
+	list-style: none;
+	padding-left: 0px !important;
+}
+
+ul.sectlevel0 > li > a {
+	visibility: hidden;
+	height: 0px;
+}
+
+li a {
+	font-family: 'trade gothic', sans-serif;
+	font-size: 12pt;
+	color: black;
+	cursor: pointer;
+	margin: 0px;
+	text-indent: initial !important;
+}
+
+li a:hover {
+	background-color: #D9D9D9;
+	display: flex;
+	flex-grow: 100;
+	color: #000000;
+	margin-top: 2px;
+}
+
+/*#toc li ul.sectlevel1 li, ul.sectlevel2 li, ul.sectlevel3 li {
+	border-bottom: 1px solid #bdbdbd;
+	border-collapse: collapse;
+}*/
+
+h1 a.link {
+	font-family: 'trade gothic', sans-serif;
+	font-weight: bold;
+	font-size: 36pt;
+	line-height: 41pt;
+	color: #000000 !important;
+}
+
+a {
+	font-family: 'trade gothic', sans-serif;
+	font-size: 12pt;
+	color: #666666;
+}
+
+.subtitle {
+	font-family: 'trade gothic', sans-serif;
+	font-weight: bold;
+	font-size: 24pt;
+	line-height: 20pt;
+	color: #000000;
+}
+
+img[alt="logo kt sz rgb"] {
+	position: relative; 
+	left: calc(100% - 200px);
+}
+
+h2, h2 a.link {
+	font-family: 'trade gothic', sans-serif;
+	font-weight: bold;
+	color: #000000;
+	font-size: 24pt;
+}
+
+h3, h3 a.link {
+	font-family: 'trade gothic', sans-serif;
+	font-weight: bold;
+	color: #000000;
+	font-size: 18pt;
+}
+
+h4, h4 a.link{
+	font-family: 'trade gothic', sans-serif;
+	font-weight: bold;
+	color: #000000;
+	font-size: 15pt;
+}
+
+h1 a.link:hover, h2 a.link:hover, h3 a.link:hover, h4 a.link:hover {
+	color: #555555;
+}
+
+#toc {
+	background-color: #d9d9d9;
+}
+
+#toctitle {
+	font-family: 'trade gothic', sans-serif;
+	font-weight: bold;
+	color: #000000;
+	font-size: 24pt;
+	line-height: 14pt;
+}
+
+#subtitle-header {
+	font-size: x-large;
+	padding: .6em;
+	margin: 0;	
+}	
+
+#content {
+	background-color: white;
+	grid-area: content;
+	max-width: 1000px;
+	padding: 1em;
+	margin: auto;
+}
+
+#content img {
+	max-width: 100%;
+}
+
+pre {
+	background-color: #f7f7f8;
+	padding: 1em;
+	word-wrap: break-word;
+	white-space: pre-wrap;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+td, th {
+	border: 1px solid gray;
+	padding: .4em;
+}
+
+th {
+	background-color: #f9f9f9;
+	text-align: left;
+}
+
+.paragraph.img-logo {
+	width: 100%;
+	position: static;
+	left: -40px;
+	border-bottom: 1px solid #dedede;
+}
+
+.sidebarblock li a:hover {
+	font-family: 'trade gothic', sans-serif;
+	font-size: 12pt;
+	color: #666666;
+	background-color: #00FF00;
+	height: 0px !important;	
+}
+</style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.3/styles/github.min.css">
+</head>
+<body class="book toc2 toc-left">
+<div id="header">
+<div id="toc" class="toc2">
+<div id="toctitle">Inhalt</div>
+<ul class="sectlevel0">
+<li><a href="#_titel_der_modelldokumentation">&lt;Titel der Modelldokumentation&gt;</a>
+<ul class="sectlevel1">
+<li><a href="#_allgemeines">1. Allgemeines</a>
+<ul class="sectlevel2">
+<li><a href="#_rechtliche_grundlagen">1.1. Rechtliche Grundlagen</a></li>
+<li><a href="#_zweck_des_dokuments">1.2. Zweck des Dokuments</a></li>
+</ul>
+</li>
+<li><a href="#_modellbeschreibung">2. Modellbeschreibung</a>
+<ul class="sectlevel2">
+<li><a href="#_zonentypen">2.1. Zonentypen</a></li>
+</ul>
+</li>
+<li><a href="#_diagramme">3. Diagramme</a>
+<ul class="sectlevel2">
+<li><a href="#_komponentendiagramm">3.1. Komponentendiagramm</a></li>
+<li><a href="#_klassendiagramm">3.2. Klassendiagramm</a></li>
+</ul>
+</li>
+<li><a href="#_klassenbeschreibung">4. Klassenbeschreibung</a>
+<ul class="sectlevel2">
+<li><a href="#_topic_stammdaten">4.1. Topic Stammdaten</a>
+<ul class="sectlevel3">
+<li><a href="#_klasse_katalogeintrag">4.1.1. Klasse Katalogeintrag</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div id="content">
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph img-logo">
+<p><span class="image"><img src="data:image/jpg;base64," alt="logo kt sz rgb"></span></p>
+</div>
+</div>
+</div>
+<h1 id="_titel_der_modelldokumentation" class="sect0"><a class="anchor" href="#_titel_der_modelldokumentation"></a><a class="link" href="#_titel_der_modelldokumentation">&lt;Titel der Modelldokumentation&gt;</a></h1>
+<div class="openblock partintro">
+<div class="content">
+<div class="paragraph">
+<p><span class="subtitle">&lt;Untertitel der Dokumentation&gt;</span><br></p>
+</div>
+<div class="sidebarblock">
+<div class="content">
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://ch-sz-geo.github.io/A000_entrypage/">zur Startseite</a><br></p>
+</li>
+<li>
+<p><a href="https://github.com/AmandaWetter/A900/tree/main/data">Übersicht Modelle</a><br></p>
+</li>
+<li>
+<p><a href="https://ch-sz-geo.github.io/A000/ebook.pdf">Dokumentation als Pdf</a><br></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<h3 id="_impressum" class="discrete">Impressum</h3>
+<details>
+<summary class="title">Erstellung</summary>
+<div class="content">
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 75%;">
+</colgroup>
+<tbody>
+<tr>
+<th class="tableblock halign-left valign-top"><p class="tableblock">Erstelldatum</p></th>
+<th class="tableblock halign-left valign-top"><p class="tableblock">24.01.2024</p></th>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Letzte Änderung</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2024-04-23</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Seitenzahl gesamt inkl. Deckblatt und Inhaltsverzeichnis</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">x</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ID nach kGeoiV</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">---</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Themen-Nummer</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A202</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Beteiligte</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Kuno Epper (kep), AGI<br>
+Laura Lacher (LL), ARE</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Status</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="ulist checklist">
+<ul class="checklist">
+<li>
+<p>&#10063; Entwurf</p>
+</li>
+<li>
+<p>&#10063; bereit für Vernehmlassung</p>
+</li>
+<li>
+<p>&#10003; gültig</p>
+</li>
+</ul>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details>
+<details>
+<summary class="title">Historie</summary>
+<div class="content">
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 10%;">
+<col style="width: 10%;">
+<col style="width: 10%;">
+<col style="width: 70%;">
+</colgroup>
+<tbody>
+<tr>
+<th class="tableblock halign-left valign-top"><p class="tableblock">Version</p></th>
+<th class="tableblock halign-left valign-top"><p class="tableblock">Datum</p></th>
+<th class="tableblock halign-left valign-top"><p class="tableblock">Autor</p></th>
+<th class="tableblock halign-left valign-top"><p class="tableblock">Bemerkung</p></th>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">23.08.2023</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">kep</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">erster Entwurf und Veröffentlichung</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">28.08.2023</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">kep</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Abschluss und Veröffentlichung</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details>
+<details>
+<summary class="title">Koreferat</summary>
+<div class="content">
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 10%;">
+<col style="width: 10%;">
+<col style="width: 10%;">
+<col style="width: 70%;">
+</colgroup>
+<tbody>
+<tr>
+<th class="tableblock halign-left valign-top"><p class="tableblock">Version</p></th>
+<th class="tableblock halign-left valign-top"><p class="tableblock">Datum</p></th>
+<th class="tableblock halign-left valign-top"><p class="tableblock">Koreferent</p></th>
+<th class="tableblock halign-left valign-top"><p class="tableblock">Prüfstelle</p></th>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">23.08.2023</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">LL</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ARE</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details>
+<details>
+<summary class="title">Referenzierte Dokumente</summary>
+<div class="content">
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 10%;">
+<col style="width: 70%;">
+<col style="width: 10%;">
+<col style="width: 10%;">
+</colgroup>
+<tbody>
+<tr>
+<th class="tableblock halign-left valign-top"><p class="tableblock">Nr.</p></th>
+<th class="tableblock halign-left valign-top"><p class="tableblock">Titel</p></th>
+<th class="tableblock halign-left valign-top"><p class="tableblock">Autor(en)</p></th>
+<th class="tableblock halign-left valign-top"><p class="tableblock">Version</p></th>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">[01]</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Kantonales Geoinformationsgesetz (KGeoiG) (SRSZ 214.110)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Kt. SZ</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">24.06.2010</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">[02]</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Verordnung zum kantonalen Geoinformationsgesetz (KGeoiV) (SRSZ 214.111)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Kt. SZ</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">18.12.2012</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">[03]</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Minimale Geodatenmodelle Bereich Nutzungsplanung; Modelldokumentation</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ARE</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.2, 22.09.2021</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">[04]</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">IRAP-Empfehlung 6. Farben und Signaturen. HSR Hochschule für Technik Rapperswil (heute: OST – Ostschweizer Fachhochschule)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">HSR Rapperswil (heute: OST)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">17.12.2012</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</details>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_allgemeines"><a class="anchor" href="#_allgemeines"></a><a class="link" href="#_allgemeines">1. Allgemeines</a></h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_rechtliche_grundlagen"><a class="anchor" href="#_rechtliche_grundlagen"></a><a class="link" href="#_rechtliche_grundlagen">1.1. Rechtliche Grundlagen</a></h3>
+<div class="paragraph">
+<p>Seit dem 1. Juli 2008 ist das Bundesgesetz über Geoinformation (GeoIG) in Kraft. Am 1. Juli 2012
+erfolgte die vollständige Inkraftsetzung des kantonalen Geoinformationsgesetzes (KGeoiG) [01]. Es hat
+zum Ziel, verbindliche Vorgaben für die Erfassung, Modellierung und den Austausch von Geodaten
+festzulegen.<br></p>
+</div>
+<div class="paragraph">
+<p>Am 1. Januar 2013 trat die kantonale Verordnung über Geoinformation (KGeoiV) in Kraft [02]. Sie
+präzisiert das KGeoiG in fachlicher sowie technischer Hinsicht und führt im Anhang 1 „Katalog der
+Geobasisdaten des Bundesrechts mit Zuständigkeit beim Kanton“ und im Anhang 2 „Katalog der
+Geobasisdaten des kantonalen Rechts“. Darin werden die Fachstellen definiert, welche für die
+Ausarbeitung eines Geodatenmodells zuständig sind.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_zweck_des_dokuments"><a class="anchor" href="#_zweck_des_dokuments"></a><a class="link" href="#_zweck_des_dokuments">1.2. Zweck des Dokuments</a></h3>
+<div class="paragraph">
+<p>Dieses Dokument beschreibt den Geobasisdatensatz</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Sondernutzungsplanung kommunal.<br></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Dieser Geobasisdatensatz wurde bis zur ÖREB-Version 2 über das Datenmodell der kommunalen
+Nutzungsplanung geführt. Aufgrund der Tatsache, dass die Ausscheidung von rechtskräftigen
+Sondernutzungsplänen (nachfolgend Gestaltungsplan) über ein von der Nutzungsplanung
+abweichendes, unabhängiges Verfahren erfolgt, wurde dieses Thema aus der kommunalen
+Nutzungsplanung ausgelagert und über ein eigenes Datenmodell beschrieben. Diese Entkoppelung
+von der Nutzungsplanung erleichtert die Nachführung der Gestaltungspläne.<br></p>
+</div>
+<div class="paragraph">
+<p>Der Geobasisdatensatz ist Bestandteil des ÖREB-Katasters.<br></p>
+</div>
+<div class="paragraph">
+<p>Diese Dokumentation richtet sich an Behörden und Fachleute des Kantons und der Gemeinden sowie
+an private Planungsbüros und GIS-Dienstleister, welche sich mit der Bearbeitung von Geobasisdaten
+zu Gestaltungsplänen befassen.<br></p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_modellbeschreibung"><a class="anchor" href="#_modellbeschreibung"></a><a class="link" href="#_modellbeschreibung">2. Modellbeschreibung</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Gestaltungspläne gemäss Art. 24 PBG sind Teil der Nutzungsplanung und damit wie der Zonenplan
+und das Baureglement eigentümerverbindlich. Der Gestaltungsplan verfeinert die Vorgaben der
+(Rahmen-)Nutzungsplanung mit zusätzlichen Aussagen über die Nutzung, Erschliessung, Bebauung
+und Ausstattung.<br></p>
+</div>
+<div class="paragraph">
+<p>Die Sonderbestimmungen der im ÖREB-Kataster dargestellten Gestaltungspläne werden in der Regel
+auf einem oder mehreren (Detail-)Plänen sowie in Vorschriften festgehalten. Im Gegensatz zum
+Zonenplan werden die Inhalte der Gestaltungspläne nicht vollständig geometrisch erfasst, sondern –
+wie im Geodatenmodell Bereich Nutzungsplanung des Bundes bereits beschrieben – nur der
+Planungsperimeter. Die weiteren Planinhalte sind über die im ÖREB-Kataster hinterlegten PDF-Dateien des jeweiligen Gestaltungsplanes zugänglich. Der Perimeter der einzelnen Gestaltungspläne
+wird als überlagernder Nutzungsplaninhalt (andere flächenbezogene Festlegungen) erfasst und die
+dazugehörigen Dokumente (Plan und Sonderbauvorschriften) im PDF-Format über einen
+Dokumentlink mit der entsprechenden Geometrie verknüpft.</p>
+</div>
+<div class="sect2">
+<h3 id="_zonentypen"><a class="anchor" href="#_zonentypen"></a><a class="link" href="#_zonentypen">2.1. Zonentypen</a></h3>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 10%;">
+<col style="width: 10%;">
+<col style="width: 30%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<th class="tableblock halign-left valign-top"><p class="tableblock">Code</p></th>
+<th class="tableblock halign-left valign-top"><p class="tableblock">Abkürzung</p></th>
+<th class="tableblock halign-left valign-top"><p class="tableblock">Bezeichnung</p></th>
+<th class="tableblock halign-left valign-top"><p class="tableblock">Beschreibung</p></th>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" colspan="3"><p class="tableblock"><strong>6 andere flächenbezogene Festlegungen</strong></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">61</p></td>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Bereiche rechtsgültiger Sondernutzungspläne</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Bereiche rechtsgültiger Sondernutzungspläne umfassen Gebiete mit Sonderbauvorschriften. Sie ergänzen, überlagern oder verändern Festlegungen des Rahmennutzungsplanes.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">61.1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">rGP</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>Bereich rechtsgültiger Gestaltungsplan</em><br>
+<em class="small">Hinweis:<br>
+Die Bezeichnung wird im konkreten Fall auf den Namen des Gestaltungsplans gesetzt.</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Diese Bereiche umfassen Gebiete mit Sonderbauvorschriften. Sie ergänzen, überlagern oder verändern Festlegungen des Zonenplans.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">61.9</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">wrSP</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Bereich weiterer rechtsgültiger Sondernutzungsplan</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Diese Bereiche umfassen weitere Gebiete mit Sonderbauvorschriften. Sie ergänzen, überlagern oder verändern Festlegungen des Zonenplans, sind aber nicht als Bereich rechtsgültiger Gestaltungsplan zu betrachten.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p><strong>Ergänzende Information zur Definition des Zonentyps "Bereich rechtsgültiger Gestaltungsplan"</strong><br></p>
+</div>
+<div class="paragraph">
+<p>Dokumente und Rechtssätze können nur mit Zonentypen und nicht mit einzelnen Geometrien
+verknüpft werden. Deshalb braucht es für jeden rechtsgültigen Gestaltungsplan einen eigenen
+Zonentyp. Der Code für diesen setzt sich zusammen aus dem kantonalen Typ "61.1" und einer
+eindeutigen, laufenden Nummer innerhalb der Gemeinde (z. B. "1", der Code lautet dann z. B.
+61.1.1).<br></p>
+</div>
+<div class="paragraph">
+<p>Die Abkürzung ist stets "rGP". Die Bezeichnung soll anstelle von "Bereich rechtsgültiger
+Gestaltungsplan" den Namen des Gestaltungsplans enthalten, vgl. Beispiele in nachfolgender Liste.<br></p>
+</div>
+<div class="paragraph">
+<p>Beispiele für die Definition von Bereichen rechtsgültiger Gestaltungspläne:</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 20%;">
+<col style="width: 60%;">
+</colgroup>
+<tbody>
+<tr>
+<th class="tableblock halign-left valign-top"><p class="tableblock">Code</p></th>
+<th class="tableblock halign-left valign-top"><p class="tableblock">Abkürzung</p></th>
+<th class="tableblock halign-left valign-top"><p class="tableblock">Bezeichnung</p></th>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">61.1.1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">rGP</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Gestaltungsplan "Dörfli"</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">61.1.2</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">rGP</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Gestaltungsplan "Freihof"</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">&#8230;&#8203;</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">&#8230;&#8203;</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">&#8230;&#8203;</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">61.1.11</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">rGP</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Gestaltungsplan "Freihof West"</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_diagramme"><a class="anchor" href="#_diagramme"></a><a class="link" href="#_diagramme">3. Diagramme</a></h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_komponentendiagramm"><a class="anchor" href="#_komponentendiagramm"></a><a class="link" href="#_komponentendiagramm">3.1. Komponentendiagramm</a></h3>
+<div class="imageblock">
+<div class="content">
+<img src="data:image/JPG;base64," alt="Komponentendiagramm">
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_klassendiagramm"><a class="anchor" href="#_klassendiagramm"></a><a class="link" href="#_klassendiagramm">3.2. Klassendiagramm</a></h3>
+<div class="imageblock">
+<div class="content">
+<img src="data:image/JPG;base64," alt="Klassendiagramm">
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_klassenbeschreibung"><a class="anchor" href="#_klassenbeschreibung"></a><a class="link" href="#_klassenbeschreibung">4. Klassenbeschreibung</a></h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_topic_stammdaten"><a class="anchor" href="#_topic_stammdaten"></a><a class="link" href="#_topic_stammdaten">4.1. Topic Stammdaten</a></h3>
+<div class="paragraph">
+<p>INTERLIS kennt den Datentyp «Aufzählung», bei dem die Werte im Modell definiert werden. Änderungen an dieser Werteliste (z.B. Umbenennung, Hinzufügen oder Streichen) führen zu Änderungen am Datenmodell und damit zu hohem Nachführungsaufwand. Um dem entgegenzuwirken, sind neu alle Aufzählwerte als Stammdaten im gleichnamigen Topic modelliert. Jede Aufzählung erhält eine eigene Klasse. Die Summe aller Einträge einer Klasse bildet den Umfang der Aufzählung. Durch dieses Modellierungsmuster bleibt das Datenmodell bei Änderungen der Werteliste unverändert.<br></p>
+</div>
+<div class="paragraph">
+<p>Die Daten des Topics Stammdaten werden zur Verfügung gestellt und sind statisch. Sie dürfen NICHT verändert werden. Die Nachführung der Kataloge erfolgt stets durch die katasterverantwortliche Stelle.</p>
+</div>
+<div class="sect3">
+<h4 id="_klasse_katalogeintrag"><a class="anchor" href="#_klasse_katalogeintrag"></a><a class="link" href="#_klasse_katalogeintrag">4.1.1. Klasse Katalogeintrag</a></h4>
+<div class="paragraph">
+<p>Die Klasse Katalogeintrag enthält die allgemeinen, für alle Kataloge gemeinsamen Attribute. Die Klasse selber ist abstrakt: Es gibt damit keine Objekte Katalogeintrag, sondern nur Objekte von den spezialisierten Klassen.<br></p>
+</div>
+<div class="paragraph">
+<p>Allgemeingültige Attributbeschreibungen sind auf der Klasse Katalogeintrag aufgeführt. Detailliertere Angaben zu den Attributen sind bei den jeweiligen Klassen zu finden.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 10%;">
+<col style="width: 90%;">
+</colgroup>
+<tbody>
+<tr>
+<th class="tableblock halign-left valign-top" colspan="2"><p class="tableblock">Allgemeines</p></th>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Vererbung</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Die Attribute dieser Klasse werden vererbt.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Objektkennung</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Objekte dieser Klasse weisen eine eineindeutige, über die Zeit stabile Objektidentifikation (OID) vom Typ UUID auf. Es sind die Regeln gemäss INTERLIS-Referenzhandbuch zu beachten</p></td>
+</tr>
+</tbody>
+</table>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 10%;">
+<col style="width: 10%;">
+<col style="width: 10%;">
+<col style="width: 60%;">
+<col style="width: 10%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Attribute</th>
+<th class="tableblock halign-left valign-top">Anzahl</th>
+<th class="tableblock halign-left valign-top">Typ</th>
+<th class="tableblock halign-left valign-top">Beschreibung</th>
+<th class="tableblock halign-left valign-top">Freigabe</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Code</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Text</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Code des Katalogeintrages; entspricht dem Wert der Aufzählung in einem INTERLIS-Modell. Der Code beinhaltet den "Wert für die Maschine" und dient z.B. zur Steuerung einer Applikation (z.B. Farbvergabe); Änderungen am Code sind mit allen Parteien, die am Datenaustausch beteiligt sind, abzusprechen.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">öffentlich</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Name</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Zahl</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">für den Benutzer lesbarer Name des Katalogeintrages Der Name beinhaltet den Wert "für den Menschen".</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">öffentlich</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">SortierNr</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Zahl</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Die Sortiernummer bestimmt die Position eines Wertes in der Liste: je tiefer die Zahl, desto weiter oben steht der Wert in der Liste.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">öffentlich</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Bemerkung</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Text</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Erläuterungen zum Objekt</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">öffentlich</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.3/highlight.min.js"></script>
+<script>
+if (!hljs.initHighlighting.called) {
+  hljs.initHighlighting.called = true
+  ;[].slice.call(document.querySelectorAll('pre.highlight > code[data-lang]')).forEach(function (el) { hljs.highlightBlock(el) })
+}
+</script>
+</body>
+</html>
