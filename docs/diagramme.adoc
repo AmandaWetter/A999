@@ -1,0 +1,10 @@
+== Diagramme
+=== Komponentendiagramm
+image::{includedir}/img/Komponentendiagramm.JPG[]
+
+=== Klassendiagramm
+image::{includedir}/img/Klassendiagramm.JPG[]
+
+ifdef::backend-pdf[]
+<<<
+endif::[]

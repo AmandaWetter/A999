@@ -1,0 +1,59 @@
+[discrete]
+=== Impressum
+
+.Erstellung
+[%collapsible]
+====
+[cols="1, 3"]
+|=======
+h|Erstelldatum h| 24.01.2024
+|Letzte Änderung | {docdate}
+| Seitenzahl gesamt inkl. Deckblatt und Inhaltsverzeichnis | x
+| ID nach kGeoiV | --- 
+| Themen-Nummer | A202
+| Beteiligte | Kuno Epper (kep), AGI + 
+Laura Lacher (LL), ARE
+| Status a| - [ ] Entwurf 
+- [ ] bereit für Vernehmlassung
+- [x] gültig
+|=======
+====
+
+
+.Historie
+[%collapsible]
+====
+[cols="10%, 10%, 10%, 70%"]
+|=======
+h| Version h| Datum h| Autor h| Bemerkung
+| 1.0 | 23.08.2023 | kep | erster Entwurf und Veröffentlichung
+| 1.1 | 28.08.2023 | kep | Abschluss und Veröffentlichung
+|=======
+====
+
+.Koreferat
+[%collapsible]
+====
+[cols="10%, 10%, 10%, 70%"]
+|=======
+h| Version h| Datum h| Koreferent h| Prüfstelle
+| 1.0 | 23.08.2023 | LL | ARE
+|=======
+====
+
+.Referenzierte Dokumente
+[%collapsible]
+====
+[cols="10%, 70%, 10%, 10%"]
+|=======
+h| Nr. h| Titel h| Autor(en) h| Version
+| [01] | Kantonales Geoinformationsgesetz (KGeoiG) (SRSZ 214.110) | Kt. SZ | 24.06.2010
+| [02] | Verordnung zum kantonalen Geoinformationsgesetz (KGeoiV) (SRSZ 214.111) | Kt. SZ | 18.12.2012
+| [03] | Minimale Geodatenmodelle Bereich Nutzungsplanung; Modelldokumentation | ARE | 1.2, 22.09.2021
+| [04] | IRAP-Empfehlung 6. Farben und Signaturen. HSR Hochschule für Technik Rapperswil (heute: OST – Ostschweizer Fachhochschule) | HSR Rapperswil (heute: OST) | 17.12.2012
+|=======
+====
+
+ifdef::backend-pdf[]
+<<<
+endif::[]

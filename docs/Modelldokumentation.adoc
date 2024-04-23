@@ -1,0 +1,52 @@
+// Hier den Titel eingeben
+:title: <Titel der Modelldokumentation> 
+:subtitle: <Untertitel der Dokumentation>
+ifdef::backend-pdf[]
+= {title}
+{subtitle}
+:title-logo-image: image:./themes/header_sz_pdf.PNG[top=-10%,align=center,width=fill]
+:pdf-theme: themes/pdf-theme.yml
+:pdf-fontsdir: fonts/
+endif::[]
+ifndef::env-github[:toc: left]
+:toc-title: Inhalt
+:toclevels: 3
+:figure-caption: Abbildung
+:table-caption: Tabelle
+:note-caption: Hinweis
+:data-uri:
+:source-highlighter: highlight.js
+:sectnums:
+:sectnumlevels: 5
+:sectlinks:
+:sectanchors:
+:includedir: docs
+:stylesheet: themes/stylesheet.css
+:doctype: book
+:!chapter-signifier:
+
+// Todo Header Styling und Environment ändern auf Doc. Header auf der Webseite muss auf andere Weise integriert werden
+
+ifndef::env-github,backend-pdf[]
+[.img-logo]
+image:{includedir}/img/logo_kt_sz_rgb.jpg[]
+
+= {title}
+[.subtitle]#{subtitle}# +
+
+****
+* https://ch-sz-geo.github.io/A000_entrypage/[zur Startseite] +
+* https://github.com/AmandaWetter/A900/tree/main/data[Übersicht Modelle] +
+* https://ch-sz-geo.github.io/A000/ebook.pdf[Dokumentation als Pdf] +
+
+****
+endif::[]
+
+// Die Verwiese auf die Inhalte der Dokumentation sollen im README auf Github nicht angezeigt werden.
+ifndef::env-github[]
+include::./impressum.adoc[]
+include::./allgemeines.adoc[]
+include::./modellbeschreibung.adoc[]
+include::./diagramme.adoc[]
+include::./klassenbeschreibung.adoc[]
+endif::[]

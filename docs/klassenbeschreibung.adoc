@@ -1,0 +1,27 @@
+== Klassenbeschreibung
+=== Topic Stammdaten
+INTERLIS kennt den Datentyp «Aufzählung», bei dem die Werte im Modell definiert werden. Änderungen an dieser Werteliste (z.B. Umbenennung, Hinzufügen oder Streichen) führen zu Änderungen am Datenmodell und damit zu hohem Nachführungsaufwand. Um dem entgegenzuwirken, sind neu alle Aufzählwerte als Stammdaten im gleichnamigen Topic modelliert. Jede Aufzählung erhält eine eigene Klasse. Die Summe aller Einträge einer Klasse bildet den Umfang der Aufzählung. Durch dieses Modellierungsmuster bleibt das Datenmodell bei Änderungen der Werteliste unverändert. +
+
+Die Daten des Topics +Stammdaten+ werden zur Verfügung gestellt und sind statisch. Sie dürfen NICHT verändert werden. Die Nachführung der Kataloge erfolgt stets durch die katasterverantwortliche Stelle.
+
+==== Klasse Katalogeintrag
+Die Klasse +Katalogeintrag+ enthält die allgemeinen, für alle Kataloge gemeinsamen Attribute. Die Klasse selber ist abstrakt: Es gibt damit keine Objekte +Katalogeintrag+, sondern nur Objekte von den spezialisierten Klassen. +
+
+Allgemeingültige Attributbeschreibungen sind auf der Klasse +Katalogeintrag+ aufgeführt. Detailliertere Angaben zu den Attributen sind bei den jeweiligen Klassen zu finden.
+
+[cols="10%, 90%"]
+|======
+2+h| Allgemeines
+| Vererbung | Die Attribute dieser Klasse werden vererbt.
+| Objektkennung | Objekte dieser Klasse weisen eine eineindeutige, über die Zeit stabile Objektidentifikation (OID) vom Typ UUID auf. Es sind die Regeln gemäss INTERLIS-Referenzhandbuch zu beachten
+|======
+
+
+[%header, cols="10%, 10%, 10%, 60%, 10%", format=csv, separator=;]
+|=======
+include::table/klasse_katalogeintrag.csv[]
+|=======
+
+ifdef::backend-pdf[]
+<<<
+endif::[]

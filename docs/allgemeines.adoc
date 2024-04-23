@@ -1,0 +1,36 @@
+== Allgemeines
+=== Rechtliche Grundlagen
+//Todo Links und Anhänge definieren 
+Seit dem 1. Juli 2008 ist das Bundesgesetz über Geoinformation (GeoIG) in Kraft. Am 1. Juli 2012
+erfolgte die vollständige Inkraftsetzung des kantonalen Geoinformationsgesetzes (KGeoiG) [01]. Es hat
+zum Ziel, verbindliche Vorgaben für die Erfassung, Modellierung und den Austausch von Geodaten
+festzulegen. +
+
+Am 1. Januar 2013 trat die kantonale Verordnung über Geoinformation (KGeoiV) in Kraft [02]. Sie
+präzisiert das KGeoiG in fachlicher sowie technischer Hinsicht und führt im Anhang 1 „Katalog der
+Geobasisdaten des Bundesrechts mit Zuständigkeit beim Kanton“ und im Anhang 2 „Katalog der
+Geobasisdaten des kantonalen Rechts“. Darin werden die Fachstellen definiert, welche für die
+Ausarbeitung eines Geodatenmodells zuständig sind.
+
+
+===  Zweck des Dokuments
+Dieses Dokument beschreibt den Geobasisdatensatz
+ 
+* Sondernutzungsplanung kommunal. +
+
+Dieser Geobasisdatensatz wurde bis zur ÖREB-Version 2 über das Datenmodell der kommunalen
+Nutzungsplanung geführt. Aufgrund der Tatsache, dass die Ausscheidung von rechtskräftigen
+Sondernutzungsplänen (nachfolgend Gestaltungsplan) über ein von der Nutzungsplanung
+abweichendes, unabhängiges Verfahren erfolgt, wurde dieses Thema aus der kommunalen
+Nutzungsplanung ausgelagert und über ein eigenes Datenmodell beschrieben. Diese Entkoppelung
+von der Nutzungsplanung erleichtert die Nachführung der Gestaltungspläne. +
+
+Der Geobasisdatensatz ist Bestandteil des ÖREB-Katasters. +
+
+Diese Dokumentation richtet sich an Behörden und Fachleute des Kantons und der Gemeinden sowie
+an private Planungsbüros und GIS-Dienstleister, welche sich mit der Bearbeitung von Geobasisdaten
+zu Gestaltungsplänen befassen. +
+
+ifdef::backend-pdf[]
+<<<
+endif::[]

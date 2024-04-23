@@ -1,0 +1,43 @@
+extends: base
+
+font:
+  catalog:
+    merge: false
+    Trade Gothic:
+      normal: tradegothic-normal.ttf
+      bold: tradegothic-bold.ttf
+      light: tradegothic-light.ttf
+      italic: tradegothic-Italic.ttf
+
+base:
+  font-color: #000000
+  font-family: Trade Gothic
+  font-size: 12
+  # line-height-length: 17
+  # line-height: $base-line-height-length / $base-font-size
+  
+heading:
+  font-family: Trade Gothic
+  font-style: bold
+  h2-font-size: 24
+  h3-font-size: 18
+  h4-font-size: 15
+
+page:
+  margin: [3.5cm, 1.4cm, 2.4cm, 2.5cm]
+
+title-page-title:
+  font-family: Trade Gothic
+  font-style: bold
+  font-size: 30
+
+header:
+  start-at: toc
+  height: 4cm
+  image-vertical-align: 0.9cm
+  background-image: image:../docs/img/logo_kt_sz_rgb.jpg[position=right top,fit=none,pdfwidth=4.5cm]
+  border-width: 0cm
+  margin: [0.9cm 0cm 0.9cm 0cm]
+
+running-content:
+  start-at: toc

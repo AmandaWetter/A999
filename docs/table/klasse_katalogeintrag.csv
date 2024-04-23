@@ -1,0 +1,5 @@
+Attribute;Anzahl;Typ;Beschreibung;Freigabe
+Code;1;Text;"Code des Katalogeintrages; entspricht dem Wert der Aufzählung in einem INTERLIS-Modell. Der Code beinhaltet den "Wert für die Maschine" und dient z.B. zur Steuerung einer Applikation (z.B. Farbvergabe); Änderungen am Code sind mit allen Parteien, die am Datenaustausch beteiligt sind, abzusprechen.";öffentlich
+Name;1;Zahl;für den Benutzer lesbarer Name des Katalogeintrages Der Name beinhaltet den Wert "für den Menschen".;öffentlich
+SortierNr;1;Zahl;Die Sortiernummer bestimmt die Position eines Wertes in der Liste: je tiefer die Zahl, desto weiter oben steht der Wert in der Liste.;öffentlich
+Bemerkung;0..1;Text;Erläuterungen zum Objekt;öffentlich

@@ -1,0 +1,11 @@
+ifndef::env-github[]
+include::./docs/Modelldokumentation.adoc[]
+endif::[]
+
+// Erklärung und Link auf Website
+ifdef::env-github[]
+[discrete]
+== Modelldokumentation
+Die ganze Übersicht der Modelldokumentation befindet sich unter folgendem Link:
+https://ch-sz-geo.github.io/A000_entrypage/[Modelldokumentation Startseite]
+endif::[]
