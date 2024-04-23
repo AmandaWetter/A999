@@ -5,7 +5,7 @@ function clickedButton(){
 	iframeinput.setAttribute("id", "iframe-input");
 	
 	if(event.target.value === "startseite"){
-		iframeinput.setAttribute("src", "./Modelldok.html");
+		iframeinput.setAttribute("src", "./generated/modelldokumentation.html");
 		changeButtonInput("modelldok");
 	} else {
 		iframeinput.setAttribute("src", "./entrypage.html");
